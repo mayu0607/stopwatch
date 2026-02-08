@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e2b2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #27373b;
+  width: 40%;
+  min-width: 500px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-align: center;
+}
+
+.timer-Display {
+  width: 100%;
+  background: linear-gradient(to bottom, #7d7d7d, #4d4d4d);
+  padding: 40px 0;
+  color: #ffffff;
+  font-size: 3rem;
+  border-radius: 10px 10px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+              rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+              rgba(0, 0, 0, 0.09) 0px 4px 2px;
+}
+
+.buttons {
+  width: 85%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.buttons button {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #141313;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.buttons button:hover {
+  background-color: #141313;
+  color: #ffffff;
+  border: 2px solid #b6b6b6;
+  transform: scale(1.05);
+}
+
+.laps {
+  margin-top: 15px;
+  list-style: none;
+  color: white;
+  font-size: 18px;
+  max-height: 150px;
+  overflow-y: auto;
+}
